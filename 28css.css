@@ -1,0 +1,118 @@
+html,body{
+    margin: 10px;
+    padding-left: 200px;
+    
+}
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   
+}
+.container{
+    width: 700px;
+    height: 700px;
+    display: grid;
+    gap: 8px;
+    overflow: hidden;
+    background-image: url(bgcolor.png);
+    grid-template-columns: repeat(7, 85px);
+    grid-template-rows: repeat(7, 85px);
+    grid-template-areas:
+    "a b b c d e e"
+    "f g g g h e e"
+    "f g g g i e e"
+    "f j j j i k l"
+    "m j j j n o l"
+    "m j j j n p q"
+    "r j j j n s q" ; 
+    animation: animate-row 10s ease infinite;
+}
+.container>:nth-child(1){
+    grid-area: a;
+}
+.container>:nth-child(2){
+    grid-area: b;
+}
+.container>:nth-child(3){
+    grid-area: c;
+}
+.container>:nth-child(4){
+    grid-area: d;
+}
+.container>:nth-child(5){
+    grid-area: e;
+}
+.container>:nth-child(6){
+    grid-area: f;
+}
+.container>:nth-child(7){
+    grid-area: g;
+}
+.container>:nth-child(8){
+    grid-area: h;
+}
+.container>:nth-child(9){
+    grid-area: i;
+}
+.container>:nth-child(10){
+    grid-area: j;
+}
+.container>:nth-child(11){
+    grid-area: k;
+}
+.container>:nth-child(12){
+    grid-area: l;
+}
+.container>:nth-child(13){
+    grid-area: m;
+}
+.container>:nth-child(14){
+    grid-area: n;
+}
+.container>:nth-child(15){
+    grid-area: o;
+}
+.container>:nth-child(16){
+    grid-area: p;
+}
+.container>:nth-child(17){
+    grid-area: q;
+}
+.container>:nth-child(18){
+    grid-area: r;
+}
+.container>:nth-child(19){
+    grid-area: s;
+}
+
+@keyframes animate-row {
+    0%{
+      grid-template-columns: repeat(7, 85px);
+      grid-template-rows: repeat(7, 85px);
+    }
+    20%{
+      grid-template-columns: 150px 60px 80px 50px 20px 60px 250px ;
+      grid-template-rows: 70px 180px 70px 40px 110px 90px 60px ;
+    }
+    40%{
+      grid-template-columns: 90px 60px 100px 70px 30px 80px 120px ;
+      grid-template-rows: 150px 70px 50px 90px 20px 100px 100px ;
+    }
+    60%{
+      grid-template-columns: 100px 90px 50px 70px 100px 80px 40px ;
+      grid-template-rows: 140px 90px 100px 90px 40px 180px 90px ;
+    }
+    80%{
+      grid-template-columns: 70px 100px 40px 100px 500px 90px 190px ;
+      grid-template-rows: 50px 90px 90px 100px 40px 20px 300px ;
+    }
+    100%{
+      grid-template-columns: 180px 60px 90px 20px 100px 160px 110px ;
+      grid-template-rows: 100px 60px 190px 70px 130px 120px 40px ;
+    }
+  }

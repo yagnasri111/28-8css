@@ -1,0 +1,41 @@
+:root {
+    --box-width: 400px;
+    --box-height: 400px;
+    --box-text-align: center;
+    --box-font-style: italic;
+    --box-font-size: 25px;
+    --box-background-color: rgb(244, 137, 214);
+    --box-color: black;
+    --box-background-img: url(spring.png);
+    --box-border: 3px solid;
+    --box-box-shadow: 2px 2px 6px black;
+  }
+  
+  body::before {
+    content: 'Using ::before created a container.';
+    display: inline-block;
+    width: var(--box-width);
+    height: var(--box-height);
+    margin: 20px;
+    text-align: var(--box-text-align);
+    font-style: var(--box-font-style);
+    font-size: var(--box-font-size);
+    background-color: var(--box-background-color);
+    color:var(--box-color);
+    border: var(--box-border);
+    box-shadow: var(--box-box-shadow);
+  }
+  body::after{
+    content: 'Using ::after created a container.';
+    display: inline-block;
+    width: var(--box-width);
+    height: var(--box-height);
+    margin: 20px;
+    text-align: var(--box-text-align);
+    font-style: var(--box-font-style);
+    font-size: var(--box-font-size);
+    color:var(--box-color);
+    background-image: var(--box-background-img);
+    border: var(--box-border);
+    box-shadow: var(--box-box-shadow);
+  }
